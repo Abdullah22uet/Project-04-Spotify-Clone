@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user-text{
+    display: none;
+}
+
+.user-text.active-text{
+    display: block;
+    animation: moveup 0.7s linear forwards;
+}
+.user-pic{
+    transition: all 0.2s ease;
+}
+.user-pic.active-pic{
+    border: 3px solid rgb(32, 211, 32);
+}
+@keyframes moveup{
+    0%{
+        margin-top: 40px;
+        opacity: 0;
+    }
+    50%{
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+.end{
+    justify-content: end;
+    background-color: #09b325;
+    animation:button 0.1s linear;
+}
+@keyframes button{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.inner-end{
+    margin-right: 1px;
+}
+.card{
+    perspective: 1000px;
+}
+.front,
+.back{
+    backface-visibility: hidden;
+    transition: all 0.4s ease;
+}
+.front{
+    overflow: hidden;
+}

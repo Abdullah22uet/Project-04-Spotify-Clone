@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify Clone - Free Music here</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="spotify_content/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="m-0 p-0">
+
+    <!----------------------------------------------------------------------------->
+    <!-------- >>Header<< --------------------------------------------------------->
+    <!----------------------------------------------------------------------------->
+    <header id="header" class="bg-[#040D12] text-white sticky top-0 z-50">
+        <nav id="nav" class="container flex justify-between items-center py-2">
+            <!-- logo section -->
+            <div class="flex justify-center items-center cursor-pointer">
+                <a href="#home">
+                    <img src="spotify_content/logo.png" alt="logo...loading" class="w-12" >
+                </a>
+                <h3 class="text-2xl font-bold ml-1">Spotify</h3>
+            </div>
+            <!-- menu section -->
+            <div class="">
+                <ul class="hidden lg:flex justify-center items-center space-x-8 -z-0">
+                    <li><a href="#home" class="hover:text-[green] duration-200">Home</a></li>
+                    <li><a href="#reviews" class="hover:text-[green] duration-200">Reviews</a></li>
+                    <li><a href="#pricing" class="hover:text-[green] duration-200">Explore Premium</a></li>
+                    <li><a href="#blog" class="hover:text-[green] duration-200">Blog</a></li>
+                    <li><a href="#contact" class="hover:text-[green] duration-200">Contact Us</a></li>
+                    <li class="border-2 border-solid border-white rounded-3xl px-2 py-1 text-[15px] cursor-pointer hover:text-[green] hover:border-[green] duration-200"><a href="#download"><i class="fa-solid fa-download mr-1 animate-bounce"></i><button>Install App</button></a></li>
+                </ul>
+            </div>
+            <!-- hambuger menu -->
+            <div id="hamburger" class="lg:hidden z-50 cursor-pointer">
+                <i id="icon" class="fa-solid fa-bars right-0"></i>
+            </div> 
+            <div id="menu" class="hidden z-10 h-[100vh] absolute inset-0">
+                <ul class="bg-[#09171f] gap-6 flex flex-col justify-center items-center py-20 h-full">
+                    <li><a id="hlink" href="#home" class="hover:text-[green] duration-200">Home</a></li>
+                    <li><a id="hlink" href="#reviews" class="hover:text-[green] duration-200">Reviews</a></li>
+                    <li><a id="hlink" href="#pricing" class="hover:text-[green] duration-200">Explore Premium</a></li>
+                    <li><a id="hlink" href="#blog" class="hover:text-[green] duration-200">Blog</a></li>
+                    <li><a id="hlink" href="#contact" class="hover:text-[green] duration-200">Contact Us</a></li>
+                    <li class="border-2 border-solid border-white rounded-3xl px-2 py-1 text-[15px] cursor-pointer hover:text-[green] hover:border-[green] duration-200"><a id="hlink" href="#download"><i class="fa-solid fa-download mr-1 animate-bounce"></i><button>Install App</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!----------------------------------------------------------------------------->
+    <!-------- >>Body<< ----------------------------------------------------------->
+    <!----------------------------------------------------------------------------->
+    <main>
+        <!-------------------------------->
+        <!-------- >>Home<< --------->
+        <!-------------------------------->
+        <section id="home" class="bg-[#040D12] text-[#e3e7e8] relative">
+            <img src="spotify_content/Gif.gif" alt="loading..." class="absolute w-80 h-80 opacity-30 blur-xl rounded-full right-16 bottom-20 -z-0">
+            <div class="container py-20">
+                <div class="flex flex-col md:flex-row justify-center items-center">
+                    <div class="text-center md:text-left md:pr-10 md:w-1/2">   
+                        <h1 class="text-4xl lg:text-5xl font-bold">Free Music Enjoyment With Spotify</h1>
+                        <p class="leading-relaxed tracking-wide mt-10">With the Spotify music and podcast app, you can play millions of songs, albums and original podcasts for free. Stream music and podcasts, discover albums, playlists or even single songs for free on your mobile or tablet. Subscribe to Spotify Premium to download and listen offline wherever you are.</p>
+                        <button class="bg-[#09b325] mt-10 text-[#f0f5f2] text-bold py-3 px-8 rounded-md hover:bg-[#0ccc2c] duration-200">Try Premium</button>
+                    </div>
+                    <div class="md:w-1/2 relative">
+                        <div>
+                            <img src="spotify_content/home_image.png" alt="boy..." class="mt-10 md:-mt-10 rounded-lg">
+                        </div>
+                        <div class="absolute rounded-lg -bottom-3 py-2 px-6 left-0 flex justify-between items-center bg-white animate-bounce">
+                            <h3 class="font-bold text-[#09b325]">Famous Singer:</h3>
+                            <p class="text-black pl-3">Addep Saniwarr</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <!-------------------------------->
+        <!-------- >>Reviews<< -------->
+        <!-------------------------------->
+        <section id="reviews">
+            <div class="container py-28">
+                <!-- heading -->
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold text-[#09b325] text-center">Live Reviews!</h3>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-center mt-2">Encourage You To Play And Enjoy Musics!</h1>
+                </div>
+                <div>
+                    <!-- images -->
+                    <div class="m-10 flex justify-center items-center flex-wrap">
+                        <img src="spotify_content/reviews/user 1-min.jpg" alt="loading..." class="w-20 h-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic" onclick="showReview()">
+                        <img src="spotify_content/reviews/user 2-min.jpg" alt="loading..." class="w-20 h-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                        <img src="spotify_content/reviews/user 3-min.jpg" alt="loading..." class="w-20 h-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                        <img src="spotify_content/reviews/user 4-min.jpg" alt="loading..." class="w-20 h-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                        <img src="spotify_content/reviews/user 5-min.jpg" alt="loading..." class="w-20 h-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                    </div>
+                    <!-- reviews -->
+                    <div class="flex flex-col items-center text-center md:w-4/5 m-auto min-h-[30vh]">
+                        <!-- review 01 -->
+                        <div class="user-text active-text">
+                            <p class="md:text-2xl mb-6">This should be used to tell a story and include my testmonials you might have about your products or services for your clients!</p>
+                            <h4 class="font-bold mb-1 ">Markin Lewis</h4>
+                            <p>Web Developer</p>
+                        </div>
+                        <!-- review 02 -->
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">I really all music, these musics help my mind in relaxation.</p>
+                            <h4 class="font-bold mb-1 ">Lewis Neven</h4>
+                            <p>Software Engineer</p>
+                        </div>
+                        <!-- review 03 -->
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">I enjoy it when I doing prepration for exams, spofity music help me lot to quick learn from mind</p>
+                            <h4 class="font-bold mb-1 ">Marry Joson</h4>
+                            <p>Docter in the (Help for Sub) Hospital</p>
+                        </div>
+                        <!-- review 04 -->
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-5">Love from my heart to Spotify Team and its singers.</p>
+                            <h4 class="font-bold mb-1 ">Bilal Syed</h4>
+                            <p>Lecturer in UET</p>
+                        </div>
+                        <!-- review 05 -->
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">I am Abdullah, and my view for Spofity is that all musics have really beautiful tones and structure.</p>
+                            <h4 class="font-bold mb-1 ">Abdullah Khan</h4>
+                            <p>HTML, Tailwind Css Developer</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+
+
+        <!-------------------------------->
+        <!-------- >>Pricing<< ----------->
+        <!-------------------------------->
+        <section id="pricing" class="bg-[#040D12] text-[#e3e7e8]">
+            <div class="container py-20">
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold text-[#09b325] text-center">Pricing</h3>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-center mt-2">Get It In Resonable Price</h1>
+                    <!-- rounded switch -->
+                    <div class="flex justify-center items-center space-x-2 m-5">
+                        <p>Bill Montly</p>
+                        <!-- <div class="w-[10%]"> -->
+                        <div id="outer-div" class="w-16 h-6 border-2 border-solid border-slate-700 rounded-full cursor-pointer flex items-center ml-2 mr-2 justify-start bg-transparent">
+                            <div id="inner-div" class="w-5 h-5 rounded-full bg-[#ffffff] ml-[1px]"></div>
+                        </div>
+                        <!-- </div> -->
+                        <p>Bill Anually</p>
+                    </div>
+                </div>
+                <!-- <div class="flex justify-center items-center w-[60%]"> -->
+                    <div class="flex flex-col lg:flex-row justify-center items-center lg:items-start space-y-3 lg:space-y-0 lg:space-x-3 py-10">
+                        <!-- card 01 -->
+                        <div class="card relative w-[95%] h-auto lg:w-[31%]">
+                            <!-- front side -->
+                            <div id="card_1_front" class="front rounded-2xl border-2 border-solid border-slate-800 px-7 py-11 h-full w-full">
+                                <div class="relative">
+                                    <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                        20<span class="text-sm font-normal tracking-widest">/per month</span>
+                                    </p>
+                                </div>
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                    <p class="capitalize">For Begineer who want to enjoy little spotify</p>
+                                </div>
+                                <ul class="pb-10 space-y-4">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Expense Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Card Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Instant Statistics</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Bookmark Function</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Accounting System</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full px-9 py-3 rounded-sm font-bold capitalize bg-slate-900 hover:bg-[#09b325] ease-in duration-200">Get started</button>
+                            </div>
+                            <!-- Back side -->
+                            <div id="card_1_back" class="back rotate-y-180 absolute top-0 left-0 rounded-2xl border-2 border-solid border-slate-800 px-7 py-11 h-full w-full">
+                                <div class="relative">
+                                    <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                        100<span class="text-sm font-normal tracking-widest">/per year</span>
+                                    </p>
+                                </div>
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                    <p class="capitalize">For Begineer who want to enjoy little spotify</p>
+                                </div>
+                                <ul class="pb-10 space-y-4">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Expense Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Card Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Instant Statistics</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Bookmark Function</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Accounting System</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full px-9 py-3 rounded-sm font-bold capitalize bg-slate-900 hover:bg-[#09b325] ease-in duration-200">Get started</button>
+                            </div>
+                        </div>
+                        <!-- card 02 -->
+                        <div class="card relative w-[95%] h-auto lg:w-[31%]">
+                            <!-- front side -->
+                            <div id="card_2_front" class="front rounded-2xl border-2 border-solid border-slate-800 px-7 py-11 h-full w-full">
+                                <div class="relative">
+                                    <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                        40<span class="text-sm font-normal tracking-widest">/per month</span>
+                                    </p>
+                                </div>
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Standard</h3>
+                                    <p class="capitalize">For Standard who want to enjoy medium spotify</p>
+                                </div>
+                                <ul class="pb-10 space-y-4">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Expense Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Card Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Instant Statistics</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Bookmark Function</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Accounting System</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full px-9 py-3 rounded-sm font-bold capitalize bg-slate-900 hover:bg-[#09b325] ease-in duration-200">Get started</button>
+                            </div>
+                            <!-- Back side -->
+                            <div id="card_2_back" class="back rotate-y-180 absolute top-0 left-0 rounded-2xl border-2 border-solid border-slate-800 px-7 py-11 h-full w-full">
+                                <div class="relative">
+                                    <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                        250<span class="text-sm font-normal tracking-widest">/per year</span>
+                                    </p>
+                                </div>
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Standard</h3>
+                                    <p class="capitalize">For Standard who want to enjoy medium spotify</p>
+                                </div>
+                                <ul class="pb-10 space-y-4">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Expense Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Card Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Instant Statistics</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Bookmark Function</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-slate-800"></i>
+                                        <span class="pl-4">Accounting System</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full px-9 py-3 rounded-sm font-bold capitalize bg-slate-900 hover:bg-[#09b325] ease-in duration-200">Get started</button>
+                            </div>
+                        </div>
+                        <!-- card 03 -->
+                        <div class="card relative w-[95%] h-auto lg:w-[31%]">
+                            <!-- front side -->
+                            <div id="card_3_front" class="front rounded-2xl border-2 border-solid border-slate-800 px-7 py-11 h-full w-full">
+                                <div class="relative">
+                                    <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                        65<span class="text-sm font-normal tracking-widest">/per month</span>
+                                    </p>
+                                </div>
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Premium</h3>
+                                    <p class="capitalize">For All who want to enjoy spotify in free zone</p>
+                                </div>
+                                <ul class="pb-10 space-y-4">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Expense Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Card Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Instant Statistics</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Bookmark Function</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Accounting System</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full px-9 py-3 rounded-sm font-bold capitalize bg-slate-900 hover:bg-[#09b325] ease-in duration-200">Get started</button>
+                            </div>
+                            <!-- Back side -->
+                            <div id="card_3_back" class="back rotate-y-180 absolute top-0 left-0 rounded-2xl border-2 border-solid border-slate-800 px-7 py-11 h-full w-full">
+                                <div class="relative">
+                                    <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                        320<span class="text-sm font-normal tracking-widest">/per year</span>
+                                    </p>
+                                </div>
+                                <div class="py-10">
+                                    <h3 class="text-xl font-bold pb-3">Premium</h3>
+                                    <p class="capitalize">For All who want to enjoy spotify in free zone</p>
+                                </div>
+                                <ul class="pb-10 space-y-4">
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Expense Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Card Management</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Instant Statistics</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Bookmark Function</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-bookmark text-[#09b325]"></i>
+                                        <span class="pl-4">Accounting System</span>
+                                    </li>
+                                </ul>
+                                <button class="w-full px-9 py-3 rounded-sm font-bold capitalize bg-slate-900 hover:bg-[#09b325] ease-in duration-200">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </section>
+
+
+
+        <!-------------------------------->
+        <!-------- >>Blogging<< ---------->
+        <!-------------------------------->
+        <section id="blog">
+            <div class="container py-20">
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold text-[#09b325] text-center">Innovation And Quality Improvement</h3>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-center mt-2">Latest Updates, Solutions And Company News</h1>
+                    <div class="flex flex-col justify-center lg:items-start items-center lg:flex-row py-20">
+                        <!-- card 01 -->
+                        <div class="flex flex-col justify-center items-center w-[95%] h-auto lg:w-[30%] space-y-3 lg:space-y-0 lg:space-x-3 cursor-pointer">
+                            <div class="overflow-hidden w-[94%] rounded-2xl">
+                                <img src="spotify_content/blog images/01.jpg" alt="blog 01...." class="hover:scale-125 duration-700 transition-all">
+                            </div>
+                            <div class="">
+                                <div class="flex items-center gap-5 py-5">
+                                    <p>20 August 2022</p>
+                                    <p>1 min read</p>
+                                </div>
+                                <a href="#blog" class="text-2xl font-bold underline hover:no-underline hover:text-[#09b325]">Four Ways To Cheer Youself On Blue Monday!</a>
+                                <p class="leading-relaxed my-5">On the second edition of Serious Business, Inc. editor Jim Ledbetter and Fusion senior editor Salman debate...</p>
+                                <p class="font-bold my-5 cursor-pointer hover:no-underline underline hover:text-[#09b325]">Read More</p>
+                            </div>
+                        </div>
+                        <!-- card 02 -->
+                        <div class="flex flex-col justify-center items-center h-auto w-[95%] lg:w-[30%] space-y-3 lg:space-y-0 lg:space-x-3 cursor-pointer">
+                            <div class="overflow-hidden w-[94%] rounded-2xl">
+                                <img src="spotify_content/blog images/02.jpg" alt="blog 01...." class="hover:scale-125 duration-700 transition-all">
+                            </div>
+                            <div class="">
+                                <div class="flex items-center gap-5 py-5">
+                                    <p>8 December 2024</p>
+                                    <p>4 min read</p>
+                                </div>
+                                <a href="#blog" class="text-2xl font-bold underline hover:no-underline hover:text-[#09b325]">How TO Organize Your Budget For Maximum Productivity!</a>
+                                <p class="leading-relaxed my-5">On the second edition of Serious Business, Inc. editor Jim Ledbetter and Fusion senior editor Salman debate...</p>
+                                <p class="font-bold my-5 cursor-pointer hover:no-underline underline hover:text-[#09b325]">Read More</p>
+                            </div>
+                        </div>
+                        <!-- card 03 -->
+                        <div class="flex flex-col justify-center items-center h-auto w-[95%] lg:w-[30%] space-y-3 lg:space-y-0 lg:space-x-3 cursor-pointer">
+                            <div class="overflow-hidden w-[94%] rounded-2xl">
+                                <img src="spotify_content/blog images/03.jpg" alt="blog 01...." class="hover:scale-125 duration-700 transition-all">
+                            </div>
+                            <div class="">
+                                <div class="flex items-center gap-5 py-5">
+                                    <p>10 June 2022</p>
+                                    <p>2 min read</p>
+                                </div>
+                                <a href="#blog" class="text-2xl font-bold underline hover:no-underline hover:text-[#09b325]">Should Small Businesses Be Entitled To System?</a>
+                                <p class="leading-relaxed my-5">On the second edition of Serious Business, Inc. editor Jim Ledbetter and Fusion senior editor Salman debate...</p>
+                                <p class="font-bold my-5 cursor-pointer hover:no-underline underline hover:text-[#09b325]">Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-------------------------------->
+        <!-- Download app ---------------->
+        <!-------------------------------->
+        <section id="download" class="bg-[#040D12] ">
+            <div class="container py-20">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-center text-white">Download App Now And Enjoy Your Daily Needs!</h1>
+                    <h3 class="text-xl leading-relaxed text-[#e3e7e8] text-center mt-5">Serving an impression list of long-term memory with experience and expertise in multiple songs tons</h3>
+                </div>
+                <div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-5">
+                    <a href="https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580" target="_blank">
+                        <img src="spotify_content/download/app store.jpg" alt="loading..." class="w-44 h-[3.8rem] flex justify-center items-center hover:opacity-70  rounded-xl">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_GB" target="_blank">
+                        <img src="spotify_content/download/images.png" alt="loading..." class="w-44 h-16 flex justify-center items-center hover:opacity-70 rounded-xl">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-------------------------------->
+        <!-- Contact Form ---------------->
+        <!-------------------------------->
+        <section id="contact">
+            <div class="container py-20">
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold text-[#09b325] text-center">Have A Question</h3>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-center mt-2">Get In Touch</h1>
+                </div>
+                <div class="flex justify-center items-center mt-10">
+                    <form action="" class="flex flex-col justify-center items-center w-full h-auto lg:w-1/2 gap-4">
+                        <input type="text" name="name" placeholder="Name" class="w-full h-10 bg-[#e6ebe7cc] text-[#3c3d3cbd] border-none px-10 py-6 rounded-md focus:outline-none">
+                        <input type="email" name="email" placeholder="Email" class="w-full h-10 bg-[#e6ebe7cc] text-[#3c3d3c] border-none px-10 py-6 rounded-md focus:outline-none">
+                        <input type="phone" name="phone" placeholder="Phone" class="w-full h-10 bg-[#e6ebe7cc] text-[#3c3d3c] border-none px-10 py-6 rounded-md focus:outline-none">
+                        <input type="text" name="company" placeholder="Occupation" class="w-full h-10 bg-[#e6ebe7cc] text-[#3c3d3c] border-none px-10 py-6 rounded-md focus:outline-none">
+                        <textarea placeholder="Message" rows="4" class="w-full bg-[#e6ebe7d2] text-[#3c3d3c] border-none px-10 py-6 rounded-md focus:outline-none resize-none"></textarea>
+                        <button type="submit" class="bg-[#09b325] mt-6 text-[#f0f5f2] text-bold py-3 px-8 rounded-md hover:bg-[#0ccc2c] duration-200">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+         <!-------------------------------->
+        <!-------------- Footer------------>
+        <!--------------------------------->
+        <section id="footer" class="bg-[#040D12] text-[#e3e7e8] relative">
+            <a href="#home">
+                <div>
+                    <i class="fa-solid fa-chevron-up p-2 rounded-full animate-bounce bottom-[6.6rem] absolute right-2 lg:right-5 bg-[#09b325] cursor-pointer"></i>
+                </div>
+            </a>
+            <div class="container py-14">
+                <div class="flex flex-col lg:flex-row justify-start items-start lg:justify-between lg:items-start w-full h-auto space-y-9 lg:space-y-0">
+                    <div class="flex flex-col justify-start space-y-6 lg:space-y-8 lg:w-[33%]">
+                        <h2 class="font-bold text-2xl">About App</h2>
+                        <p class="leading-relaxed capitalize tracking-wider">This should be used to tell a story and include any testmonials you might have about your products or services for your clients</p>
+                        <div class="flex space-x-3 items-center">
+                            <p class="pr-8">Follow us</p>
+                            <i class="fa-brands fa-facebook-f hover:text-[#09b325] cursor-pointer duration-300 hover:animate-pulse p-3"></i>
+                            <i class="fa-brands fa-instagram hover:text-[#09b325] cursor-pointer duration-300 hover:animate-pulse p-3"></i>
+                            <i class="fa-brands fa-whatsapp hover:text-[#09b325] cursor-pointer duration-300 hover:animate-pulse p-3"></i>
+                        </div>
+                    </div>
+                    <div class="flex justify-between lg:w-[22%] space-x-14 lg:space-x-3"> 
+                        <div class="space-y-6 lg:space-y-8">
+                            <h2 class="font-bold text-2xl">Quick Links</h2>
+                            <ul class="space-y-2">
+                                <li><a href="" class="underline">Home</a></li>
+                                <li><a href="" class="underline">Reviews</a></li>
+                                <li><a href="" class="underline">Pricing</a></li>
+                                <li><a href="" class="underline">Blog</a></li>
+                                <li><a href="" class="underline">Install App</a></li>
+                                <li><a href="" class="underline">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6 lg:space-y-8">
+                            <h2 class="font-bold text-2xl">Help</h2>
+                            <ul class="space-y-2">
+                                <li><a href="" class="underline">About Us</a></li>
+                                <li><a href="" class="underline">Partners</a></li>
+                                <li><a href="" class="underline">Carrer</a></li>
+                                <li><a href="" class="underline">Reviews</a></li>
+                                <li><a href="" class="underline">Conditions</a></li>
+                                <li><a href="" class="underline">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-6 lg:space-y-8 justify-start lg:w-[33%]">
+                        <h2 class="font-bold text-2xl">NewsLetter</h2>
+                        <p class="capitalize leading-relaxed tracking-wider">Subscribe with email and loads of news will be send to you</p>
+                        <div>
+                            <input type="email" name="email2" placeholder="Email" class="w-[80%] h-10 bg-[#36383785] text-[#969595] border-none px-6 rounded-l-md py-6 focus:outline-none">
+                            <span class="h-10 px-3 bg-[#09b325] py-[0.80rem] rounded-r-md cursor-pointer">
+                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex py-10 justify-center border-t pt-10 border-slate-600">
+                <p>2022 &copy; Spotify. All Rights Reserved.</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Javascript ========================================================================= -->
+    <script>
+        // for navbar on scroll
+        const navbar = document.getElementById("header");
+        window.onscroll = () =>{
+            if(window.scrollY > 100){
+                navbar.classList.add("border-b");
+                navbar.classList.add("bg-color-[#b8b8b6]");
+            }
+            else{
+                navbar.classList.remove("border-b");
+                navbar.classList.remove("bg-color-[#b8b8b6]");
+            }
+        }
+
+
+
+        // for menu in mobile
+        var hamBurger = document.getElementById("hamburger")
+        var faSolid = document.getElementById("icon")
+        var menu = document.getElementById("menu")
+        var hlink = document.querySelectorAll("#hlink")
+        hamBurger.addEventListener("click",function(){
+            menu.classList.toggle("hidden")
+            faSolid.classList.toggle("fa-xmark")
+        })
+        hlink.forEach(link => {
+            link.addEventListener("click",function(){
+                menu.classList.toggle("hidden")
+                faSolid.classList.toggle("fa-xmark")
+            })
+        });
+
+
+
+        // for reviews section , for multiple comments
+        var userText = document.getElementsByClassName("user-text")
+        var userPic = document.getElementsByClassName("user-pic")
+        function showReview(){
+            for(pic of userPic){
+                pic.classList.remove("active-pic");
+            }
+            for(text of userText){
+                text.classList.remove("active-text");
+            }
+            let i = Array.from(userPic).indexOf(event.target);
+    
+            userPic[i].classList.add("active-pic");
+            userText[i].classList.add("active-text");
+        }
+
+
+
+        // for toggle button in pricing section
+        var outer = document.getElementById("outer-div")
+        var inner = document.getElementById("inner-div")
+        outer.addEventListener("click",function(){
+            this.classList.toggle("end")
+            inner.classList.toggle("inner-end")
+        })
+
+
+
+        // for three cards rotation
+        const card1_front = document.querySelector("#card_1_front")
+        const card1_back = document.querySelector("#card_1_back")
+
+        const card2_front = document.querySelector("#card_2_front")
+        const card2_back = document.querySelector("#card_2_back")
+
+        const card3_front = document.querySelector("#card_3_front")
+        const card3_back = document.querySelector("#card_3_back")
+        outer.addEventListener("click",function(){
+            card1_front.classList.toggle("-rotate-y-180")
+            card1_back.classList.toggle("rotate-y-180")
+
+            card2_front.classList.toggle("-rotate-y-180")
+            card2_back.classList.toggle("rotate-y-180")
+
+            card3_front.classList.toggle("-rotate-y-180")
+            card3_back.classList.toggle("rotate-y-180")
+        })
+
+</script>
+</body>
+</html>
